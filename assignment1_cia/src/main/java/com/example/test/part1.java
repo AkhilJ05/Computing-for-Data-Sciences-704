@@ -159,20 +159,21 @@ return arex;
 
     public static void main(String[] args) {
       List<String> s= wordcount("file.txt");
-      System.out.println(s.size());
+      System.out.println("\nCount of words is"+ s.size());
       
 
       int  rp= repeatcount(s,"the");
       if(rp == -1){
-        System.out.println("Word not in file");
+        System.out.println("\nWord not in file");
       }
       else{
-        System.out.println(rp);
+        System.out.println("\nCount of word is" + rp);
     }
      
-      System.out.println(top10(s));
-      System.out.println(asc("file.txt")); 
-      System.out.println(extract("file.txt")); 
+      System.out.println("word with highest count is" + top10(s));
+      System.out.println("\nNumbers in file in ascending order is \n" +asc("file.txt"));
+
+      System.out.println("\nWords and numbers of file in descending order is\n"+ extract("file.txt")); 
       
       
     }
